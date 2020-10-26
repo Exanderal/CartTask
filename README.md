@@ -9,3 +9,7 @@ You can find content of first task in cart_only_html folder
 # Zadanie 2
 
 Available after command `npm install` and then `npm start` from cart folder
+
+# Online Version #
+
+Here you can find online version: https://carttask.netlify.app/
