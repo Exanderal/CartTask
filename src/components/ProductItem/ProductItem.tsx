@@ -8,6 +8,8 @@ import {
   QuantityButton,
   Quantity,
   StyledTr,
+  EditIcon,
+  DeleteIcon
 } from "./style";
 import { CartContext } from "../../context/CartContext";
 
@@ -40,7 +42,7 @@ const CartProduct: FC<Props> = ({ image, price, title }) => {
     <tbody>
       <StyledTr>
         <td onClick={removeProduct}>
-          <img src={Ximg} alt="delete icon" />
+          <DeleteIcon src={Ximg} alt="delete icon" />
         </td>
         <td>
           <TableImage src={image} alt="Product image" />
@@ -54,7 +56,7 @@ const CartProduct: FC<Props> = ({ image, price, title }) => {
             <QuantityButton onClick={decrementQuantity}>-</QuantityButton>
             <Quantity>{productQuantity}</Quantity>
             <QuantityButton onClick={incrementQuantity}>+</QuantityButton>
-            <img src={EditImg} onClick={updateCart} alt="Edit icon" />
+            <EditIcon src={EditImg} onClick={updateCart} alt="Edit icon" />
           </QuantityWrapper>
         </td>
       </StyledTr>

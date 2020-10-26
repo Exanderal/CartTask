@@ -48,3 +48,10 @@ export const StyledTr = styled.tr`
     }
   }
 `;
+
+export const DeleteIcon = styled.img`
+cursor: pointer;
+`
+export const EditIcon = styled.img`
+cursor: pointer;
+`
