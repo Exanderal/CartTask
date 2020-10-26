@@ -1,10 +1,13 @@
 import React, { FC } from "react";
+import Button from "../Button";
+import { NavContainer } from "./style";
 
 const CartNav: FC = () => {
   return (
-    <div>
-      <h1>Cart Nav</h1>
-    </div>
+    <NavContainer>
+      <h1>Shopping cart</h1>
+      <Button content="Proceed To Checkout" />
+    </NavContainer>
   );
 };
 
