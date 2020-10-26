@@ -22,9 +22,13 @@ export const QuantityButton = styled.button`
   padding: 0.2rem 0.6rem;
   border: 1px solid ${(props) => props.theme.color.borderGrey};
   cursor: pointer;
+  transition: all 0.2s;
   @media only screen and (max-width: 340px) {
     padding: 0.2rem 0.4rem;
     font-size: 0.8rem;
+  }
+  :hover {
+    background-color: ${(props) => props.theme.color.borderGrey};
   }
 `;
 
@@ -39,5 +43,8 @@ export const StyledTr = styled.tr`
   td {
     border-bottom: 1px solid ${(props) => props.theme.color.borderGrey};
     padding: 1rem 0;
+    :first-child {
+      cursor: pointer;
+    }
   }
 `;

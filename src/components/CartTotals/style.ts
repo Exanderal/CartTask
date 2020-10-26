@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ShippingWrapper = styled.div`
@@ -47,7 +48,16 @@ export const TotalsButton = styled.button`
   border: none;
   font-weight: 700;
   width: 100%;
+  transition: all 0.2s;
+  :hover {
+    background-color: ${(props) => props.theme.color.primary};
+  }
 `;
 export const GrandPrice = styled.p`
   font-size: 1.2rem;
+`;
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
 `;

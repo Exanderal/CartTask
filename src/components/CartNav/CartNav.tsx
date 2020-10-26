@@ -1,12 +1,20 @@
-import React, { FC } from "react";
-import Button from "../Button";
-import { NavContainer } from "./style";
+import React, { FC, useContext } from "react";
+import { CartContext } from "../../context/CartContext";
+import { NavContainer, Button, StyledLink } from "./style";
 
 const CartNav: FC = () => {
+  const { quantity } = useContext(CartContext);
   return (
     <NavContainer>
       <h1>Shopping cart</h1>
-      <Button content="Proceed To Checkout" />
+
+      {quantity > 0 ? (
+        <StyledLink to="/checkout">
+          <Button>Proceed to checkout</Button>
+        </StyledLink>
+      ) : (
+        ""
+      )}
     </NavContainer>
   );
 };

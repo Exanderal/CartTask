@@ -15,10 +15,10 @@ export const CartContainer = styled.main`
     padding: 0 2rem;
   }
   @media only screen and (max-width: 900px) {
-    min-height: auto;
     margin: 0.7rem 0;
   }
   @media only screen and (max-width: 700px) {
+    min-height: auto;
     padding: 0.5rem 1rem;
   }
   @media only screen and (max-width: 340px) {

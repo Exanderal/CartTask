@@ -14,3 +14,27 @@ export const ProductsWrapper = styled.div`
     padding: 1rem 0;
   }
 `;
+
+export const Button = styled.button`
+  background-color: ${(props) => props.theme.color.black};
+  cursor: pointer;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  font-weight: 700;
+  transition: all 0.2s;
+  margin-left: auto;
+  :hover {
+    background-color: ${(props) => props.theme.color.primary};
+  }
+`;
+export const WarningWrapper = styled.div`
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
+export const WarningButton = styled(Button)`
+  margin: 0.5rem 0 0;
+`;

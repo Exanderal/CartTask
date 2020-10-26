@@ -1,16 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { ThemeProvider } from "styled-components";
-import theme from "./themes";
 import reportWebVitals from "./reportWebVitals";
-import Cart from "./screens/Cart";
 import "./layout.css";
+import AppRouter from "./AppRouter";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <Cart />
-    </ThemeProvider>
+    <AppRouter />
   </React.StrictMode>,
   document.getElementById("root")
 );
